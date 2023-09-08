@@ -8,21 +8,26 @@ project_name='FraudDetection'
 
 list_of_files=[
     ".github/workflows/.gitkeep",
-    f"src/{project_name}/_init_.py",
-    f"src/{project_name}/components/_init_.py",
-    f"src/{project_name}/utils/_init_.py", 
-    f"src/{project_name}/config/_init_.py",
-    f"src/{project_name}/config/configuration.py",
-    f"src/{project_name}/pipeline/_init_.py",
-    f"src/{project_name}/entity/_init_.py",
-    f"src/{project_name}/constants/_init_.py",
-    "config/config.yaml",
-    "dvc.yaml",
-    "params.yaml",
+    ".ebextensions/python.config",
+    f"catboost_info/learn/catboost_training.json",
+    f"catboost_info/learn/leran_error.tsv",
+    f"catboost_info/learn/time_left.tsv",
+    f"notebook/catboost_info/learn/events.out.tfevents",
+    f"notebook/catboost_info/catboost_training.json",
+    f"notebook/catboost_info/leran_error.tsv",
+    f"notebook/catboost_info/time_left.tsv",
+    f"notebook/data",    
+    f"src/__init__.py",
+    f"src/components/_init_.py",
+    f"src/utils/_init_.py", 
+    f"src/pipeline/_init_.py",
+    f"src/exception.py",
+    f"src/logger.py" ,
+    f"src/utils.py",
+    f"templates/home.html",
+    f"templates/index.html",
     "requirements.txt",
-    "setup.py",
-    "research/trails.ipynb",
-    "templates/index.html"
+    "setup.py"
 ]
 
 for filepath in list_of_files:
